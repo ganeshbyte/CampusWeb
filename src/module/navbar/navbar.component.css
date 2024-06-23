@@ -1,0 +1,11 @@
+.example-spacer {
+  flex: 1;
+}
+.example-icon{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+mat-toolbar{
+  height: 100px;
+}

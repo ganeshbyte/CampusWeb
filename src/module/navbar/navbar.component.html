@@ -1,0 +1,51 @@
+<ng-container>
+  <mat-toolbar>
+    <div class="mr-20 flex items-center w-full">
+<!--      <button  class="example-icon" aria-label="Example icon-button with menu icon">-->
+<!--        <mat-icon>menu</mat-icon>-->
+<!--      </button>-->
+      <img class="w-32" src="assets/images/school_logo.png" alt="logo">
+      <span class="text-md mr-20"></span>
+      <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <a href="#">Home</a>
+      </button>
+      <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <a href="#">About Us</a>
+      </button>
+      <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <a href="#">Campuses</a>
+      </button>
+      <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <a href="#">Institutes</a>
+      </button>
+      <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <a href="#">Infrastructure</a>
+      </button>
+      <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <a href="#">News and Events</a>
+      </button>
+      <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <a href="#">Student Section</a>
+      </button>
+      <button (click)="isLoggedIn ? Logout() : Login()" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" >
+        {{isLoggedIn ? 'Logout' : 'Login'}}
+      </button>
+
+<!--        <ng-container *ngTemplateOutlet="authStatusTemplate; context:{id : 12}">-->
+<!--        </ng-container>-->
+
+<!--      <ng-template #authStatusTemplate let-index = "id">-->
+<!--        @if(isLoggedIn){-->
+<!--          <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">-->
+<!--            <a href="#">Login</a>-->
+<!--          </button>-->
+<!--        }@else{-->
+<!--          <button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">-->
+<!--            <a href="#">Logout</a>-->
+<!--          </button>-->
+<!--        }-->
+<!--      </ng-template>-->
+
+    </div>
+  </mat-toolbar>
+</ng-container>
