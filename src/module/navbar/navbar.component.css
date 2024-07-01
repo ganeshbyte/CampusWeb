@@ -1,3 +1,9 @@
+.top-nav{
+  height: 75px;
+  width: 100%;
+  background-color: rgb(189,142,194);
+}
+
 .example-spacer {
   flex: 1;
 }
@@ -7,5 +13,7 @@
 }
 
 mat-toolbar{
-  height: 100px;
+  height: 60px;
+  color: white;
+background-color: #A271A2;
 }

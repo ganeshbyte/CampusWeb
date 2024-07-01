@@ -1,5 +1,31 @@
 <app-navbar/>
-<app-carousel></app-carousel>
-<ng-container class="bottom-0">
+<div>
+  <img class="banner-img" src="assets/images/image1_0.jpg" alt="school banner image">
+</div>
+<mat-divider></mat-divider>
+<div class="text-3xl flex items-center justify-center mt-10 text-pink-400">
+  Key Highlights of our school
+</div>
+
+<div class="flex w-full justify-evenly mt-10  ">
+  @for (item of news; track item.id) {
+    <app-news [imageUrl]="item.imageUrl" [description]="item.description" [title]="item.title"/>
+  }
+</div>
+
+<ng-container >
   <app-footer/>
 </ng-container>
+
+<!--<app-breadcrumb>-->
+<!--    <ul selectBreadCrumb>-->
+<!--      <li>-->
+<!--        Home-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        Home-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--</app-breadcrumb>-->
+<router-outlet ></router-outlet>
+
